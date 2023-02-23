@@ -5,13 +5,8 @@
     font-family: montserrat, sans-serif;
 }
 
-body {
-    background-color: black;
-    color: white;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Weather-storm_large.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+html {
+    overflow: hidden;
 }
 
 #content {
@@ -19,13 +14,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Weather-storm_large.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right;
     height: 100vh;
+    overflow-y: auto;
 }
 
 #top-div {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
 }
 
 .main-info {
@@ -122,8 +126,8 @@ input:focus {
 }
 
 #bottom-div {
-    padding: 80px;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 #week-forecast {
